@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eje 3</title>
+</head>
+<body>
+    <form id="formulario">
+        <label>Usuario</label>
+        <input type="text" name="nombre" id="usuario">
+        <br>
+        <label>Contraseña</label>
+        <input type="text" name="nombre" id="contra">
+        <br>
+        <label>Tipo Usuario</label>
+        <select id="tipo">
+            <option value="cliente">cliente</option>
+            <option value="admin">admin</option>
+        </select>
+
+    </form>
+    <button onclick="agregarFila()">Enviar</button>
+
+    <!-- Creacion de Tabla-->
+    <table id="part1" class="alpha" border="1">
+        <tr>
+          <td><strong>Usuario</strong></td>
+          <td><strong>Contra</strong></td>
+          <td><strong>Cliente</strong></td>
+          <td><strong>existe</strong></td>
+        </tr>
+        
+    </table>
+
+    <!--Crear un index.html con lo básico de html5 para iniciar una página más un formulario que
+    pida usuario contraseña y si es cliente o admin, al dar click en el boton enviar debe agregar
+    una fila a la tabla que se encuentra abajo del formulario. Si el usuario es igual a uno de los
+    usuarios ya ingresados debe colocar en una de las columnas existe, si el usuario no existe
+    previamente debe decir nuevo. -->
+    <script src="script.js"></script>
+</body>
+</html>
